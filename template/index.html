@@ -1,0 +1,268 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Emotion Audit - Home</title>
+{% endblock head %}
+
+{% block main %}
+  <section id="hero" class="hero d-flex align-items-center">
+    <div class="container">
+      <div class="row gy-4 d-flex justify-content-between">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h2 data-aos="fade-up">Emotion Audit</h2>
+          <h3 data-aos="fade-up">A Sentiment Analysis Web App</h3>
+          <p data-aos="fade-up" data-aos-delay="100">The lightning fast Web Dev App for you to decide the lows and highs of your day ! </p>
+
+        </div>
+
+        <div class="col-lg-5 order-1 order-lg-2 hero-img" data-aos="zoom-out">
+          <img src="static/img/hero-img.svg" class="img-fluid mb-3 mb-lg-0" alt="">
+        </div>
+
+      </div>
+    </div>
+  </section>
+  
+  <main id="main">
+    <section id="featured-services" class="featured-services">
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up">
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-cart-flatbed"></i></div>
+            <div>
+              <h4 class="title">Real time analytics</h4>
+              <p class="description">React without delay. AI helps you prevent problems before they happen.</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-truck"></i></div>
+            <div>
+              <h4 class="title">Simple report with advanced background </h4>
+              <p class="description">Generate impressive customer experience reports directly in PowerBI and Tableau.</p>
+            </div>
+          </div>
+          
+          <div class="col-lg-4 col-md-6 service-item d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon flex-shrink-0"><i class="fa-solid fa-truck-ramp-box"></i></div>
+            <div>
+              <h4 class="title">Easy access to platform</h4>
+              <p class="description">Run Text Analytics Platform using Excel, Google Sheets or API. Analyze your documents remotely or in-house.</p>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </section>
+
+    <section id="about" class="about pt-0">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
+            <img src="static/img/about.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 content order-last  order-lg-first">
+            <h3>About Us</h3>
+            <p>
+              The Sentiment Analysis Model integrated with our website. Which is empowered by a Django Backend Modelling Supervised Machine Learning Algorithm. Talking about the user interface, we have a website with complete prediction system installed into it. Type in how you feel and we will try to define whether its positive or negative 
+            </p>
+            <ul>
+              <li data-aos="fade-up" data-aos-delay="100">
+                <i class="bi bi-diagram-3"></i>
+                <div>
+                  <p>To predict we need to type in about a situation or how we feel  and click on button predict. As soon as the predict button is hit, Django backend activates and the Supervised model which is already trained using explicit dataset accepts the values.</p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="200">
+                <i class="bi bi-fullscreen-exit"></i>
+                <div>
+                  <p>Then converts it to model understandable Language (Data Preprocessing) and predicts the outcome using the predict operation. This predicted result is then flushed to the frontend of the website for user notice.</p>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="300">
+                <i class="bi bi-broadcast"></i>
+                <div>
+                  <h5>Note:-</h5>
+                  <p>The result is totally based on prediction. We don't register any claim on the truth of this information.</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+    <section id="team" class="team pt-0">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <span>Our Team</span>
+          <h2>Our Team</h2>
+
+        </div>
+
+        <div class="row" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-3 col-md-6 d-flex mx-auto">
+            <div class="member">
+              <img src="/static/img/team/team-1.png" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4>Shalabh Kamboj</h4>
+                <span>Software Developer</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 d-flex mx-auto">
+            <div class="member">
+              <img src="/static/img/team/team-2.png" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4>Tanisha Srivastava</h4>
+                <span>Content Writer</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-lg-3 col-md-6 d-flex mx-auto">
+            <div class="member">
+              <img src="/static/img/team/team-3.png" class="img-fluid" alt="">
+              <div class="member-content">
+                <h4>Utkarsh Kumar</h4>
+                <span>Data Scientist</span>
+                <div class="social">
+                  <a href=""><i class="bi bi-twitter"></i></a>
+                  <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+
+      </div>
+    </section>
+    
+    <section id="call-to-action" class="call-to-action">
+      <div class="container" data-aos="zoom-out">
+
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <p>Call To Action</p>
+            <h3>Social listening that dives deep beneath the surface.</h3>
+            <a class="cta-btn" href="{% url 'main:predict' %}">Call To Action</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+    
+    <section id="features" class="features">
+      <div class="container">
+
+        <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+
+          <div class="col-md-5">
+            <img src="static/img/features-1.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-md-7">
+            <h3>Sentiment Analysis - Opinion Mining.</h3>
+            <p class="fst-italic">
+              Sentiment analysis relates to the use of natural language processing (NLP), text analysis and computational linguistics to identify and extract subjective information in text document.
+              <br /><br />
+              
+              Sentiment analysis strives to determine the attitude of a writer with respect to the topic or the overall contextual polarity of a text document. We can distinguish four general approaches to sentiment analysis: keyword spotting, lexical affinity, statistical methods, and concept-level techniques.<br/><br />
+
+              Our API service combines all aforementioned techniques to determine document sentiment, depending on many factors such as: document type (Twitter content, Amazon comment, email content etc.), it's length and lexical coherence
+            </p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row gy-4 mt-4">
+
+          <div class="col-lg-4">
+
+            <div class="info-item d-flex">
+              <i class="bi bi-geo-alt flex-shrink-0"></i>
+              <div>
+                <h4>Location:</h4>
+                <p>Kharar, Mohali, India</p>
+              </div>
+            </div>
+            
+            <div class="info-item d-flex">
+              <i class="bi bi-envelope flex-shrink-0"></i>
+              <div>
+                <h4>Email:</h4>
+                <p>contact@test.com</p>
+              </div>
+            </div>
+            
+            <div class="info-item d-flex">
+              <i class="bi bi-phone flex-shrink-0"></i>
+              <div>
+                <h4>Call:</h4>
+                <p>+91 00000 00000</p>
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="col-lg-8">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="col-md-6 form-group mt-3 mt-md-0">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+          
+        </div>
+
+      </div>
+    </section>
+    
+  </main>
+  
+
+  {% endblock main %}

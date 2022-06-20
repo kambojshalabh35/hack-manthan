@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+
+<style>
+  .bg-img {
+    background-image: url("{% static '/img/page-header.jpg' %}");
+  }
+</style>
+
+{% block head %}
+<title>Emotion Audit - Predict</title>
+{% endblock head %}
+
+  <main id="main">
+
+    <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center bg-img">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>Predict</h2>
+              <p>Twitter mode is usually more accurate for short, unformatted contents. Includes irony, slang and abbreviation detection. In this mode additional text cleaning is performed, inluding removal of usernames, links, numbers and special characters. Hashtags are being left for analysis.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ol>
+            <li><a href="{% url 'main:home' %}">Home</a></li>
+            <li>Predict</li>
+          </ol>
+        </div>
+      </nav>
+    </div>
+    
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+          <div class="col-lg-8 mx-auto">
+            <form action="" method="post" role="form" class="php-email-form">
+              {% csrf_token %}
+              <div class="row">
+                <div class="mt-0">
+                  <p></p>
+                </div>
+                <div class="form-group mt-4">
+                  <textarea class="form-control" name="body" rows="5" placeholder="Enter the post description you want to check Emotion." required></textarea>
+                </div>
+                <div class="my-3">
+                  <div class="loading">Loading</div>
+                  <div class="error-message"></div>
+                  <div class="sent-message">Your message has been sent. Thank you!</div>
+                </div>
+              <div class="text-center"><button type="submit">Analyse</button></div>
+            </form>
+          </div>
+          
+        </div>
+
+      </div>
+    </section>
+    
+  </main>
+  
+{% endblock main %}

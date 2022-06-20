@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block main %}
+
+<style>
+  .bg-img {
+    background-image: url("{% static '/img/page-header.jpg' %}");
+  }
+</style>
+
+{% block head %}
+<title>Emotion Audit - Result</title>
+{% endblock head %}
+
+
+  <main id="main">
+
+    <div class="breadcrumbs">
+      <div class="page-header d-flex align-items-center bg-img">
+        <div class="container position-relative">
+          <div class="row d-flex justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h2>Result</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav>
+        <div class="container">
+          <ol>
+            <li><a href="{% url 'main:home' %}">Home</a></li>
+            <li>Result</li>
+          </ol>
+        </div>
+      </nav>
+    </div>
+    
+    <section class="sample-page mt-0">
+      <div class="container" data-aos="fade-up">
+        <p class="text-center">
+          {% if result == 0 %}
+          <lottie-player src="https://assets4.lottiefiles.com/packages/lf20_5zYhWw.json"  background="transparent" speed="1" class="col-4 mx-auto" loop autoplay></lottie-player>
+          <p class="text-center">The context of the sentiment is hopeful and confident.</p>
+          {% else %}
+          <lottie-player src="https://assets8.lottiefiles.com/packages/lf20_Tkwjw8.json"  background="transparent" speed="1" class="col-4 mx-auto" loop autoplay></lottie-player>
+          <p class="text-center">There is something suspicious or offensive about the Post description.</p>
+          {% endif %}
+        </p>
+      </div>
+    </section>
+    
+  </main>
+  
+{% endblock main %}
